@@ -52,18 +52,21 @@ var audioPlayer=new Audio('media/1015.ogg');
 
   	  	$("#img_left").swipe({
 		  swipe:function(event, direction, distance, duration, fingerCount) {
-		  	if(isSwiping)return;
-		  	isSwiping=true;
-		  	audioPlayer.play();
-		    console.log("You swiped " + direction );
-		    index+=1;
-            count++;
-            $("#count_number").html(count);
-		    if(!isStart){
-		    	isStart=true;
-		    	timeCallBack=setInterval(playGame,2000);
-		    }
-		    if(direction=="right"){
+		  	
+			    if(direction=="right"){
+
+				    	if(isSwiping)return;
+				  	isSwiping=true;
+				  	audioPlayer.play();
+				    console.log("You swiped " + direction );
+				    index+=1;
+		            count++;
+		            $("#count_number").html(count);
+				    if(!isStart){
+				    	isStart=true;
+				    	timeCallBack=setInterval(playGame,2000);
+				    }
+
 			    	$("#img_left").animate({
 					
 					left: "-=50%",
@@ -93,15 +96,17 @@ var audioPlayer=new Audio('media/1015.ogg');
 
 		$("#img_left_next").swipe({
 		  swipe:function(event, direction, distance, duration, fingerCount) {
-		  	if(isSwiping)return;
-		  	isSwiping=true;
-		    console.log("You swiped " + direction );
-            audioPlayer.play();
-		    index+=1;
-		    count++;
-            $("#count_number").html(count);
+		  	
 		    
 		    if(direction=="right"){
+                   if(isSwiping)return;
+				  	isSwiping=true;
+				    console.log("You swiped " + direction );
+		            audioPlayer.play();
+				    index+=1;
+				    count++;
+		            $("#count_number").html(count);
+
 			    	$("#img_left_next").animate({
 					
 					left: "-=50%",
