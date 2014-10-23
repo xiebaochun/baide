@@ -18,11 +18,12 @@ var timeCallBack;
  	                   "top":"80%"});
   
   $("#replay_bt").click(function(){
-	    $("#replay_bt").hide();
-  	  	$("#share_bt").hide();
-  	  	$("#img_result").hide();
-    	$("#bg").attr("src","images/beijing-sheet0.png");
-        $("#start_bt").show();
+	    // $("#replay_bt").hide();
+  	  // 	$("#share_bt").hide();
+  	  // 	$("#img_result").hide();
+    	// $("#bg").attr("src","images/beijing-sheet0.png");
+     //    $("#start_bt").show();
+     window.location.reload(false); 
    });
   $("#start_bt").click(function(){
   	  console.log("start click");
@@ -148,7 +149,7 @@ var timeCallBack;
   	  	$("#time").hide();
   	  	$(".game_img").hide();
   	  	$("#replay_bt").show();
-  	  	
+
   	  	$("#share_bt").show();
   	  	$("#img_result").show();
     	$("#bg").attr("src","images/beijing3-sheet0.png");
