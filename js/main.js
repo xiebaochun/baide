@@ -141,6 +141,7 @@ var audioPlayer=new Audio('media/1015.ogg');
   function end(){
   	if(time>=8){
   		$("#p1").html(count);
+  		$("#p2").html((parseFloat(count)/10).toFixed(1));
   		time=0;
   		count=0;
   		 index=2;
