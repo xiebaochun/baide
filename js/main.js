@@ -136,6 +136,7 @@ var timeCallBack;
   }
   function end(){
   	if(time>=8){
+  		$("#p1").html(count);
   		time=0;
   		count=0;
   		 index=2;
@@ -147,6 +148,7 @@ var timeCallBack;
   	  	$("#time").hide();
   	  	$(".game_img").hide();
   	  	$("#replay_bt").show();
+  	  	
   	  	$("#share_bt").show();
   	  	$("#img_result").show();
     	$("#bg").attr("src","images/beijing3-sheet0.png");
