@@ -61,7 +61,7 @@ var audioPlayer=new Audio('media/1015.ogg');
 					
 					left: "-=50%",
 					top: "60%"
-					}, 5000, function() {
+					}, 1000, function() {
 					// Animation complete.
 					$(this).css({"left":"15%","top":"20%","z-index":"0"});
                     $(this).attr("src","images/tu"+index+"_left-sheet0.png");
@@ -76,7 +76,7 @@ var audioPlayer=new Audio('media/1015.ogg');
 				    
 				    left: "+=50%",
 				    top: "60%"
-				  }, 5000, function() {
+				  }, 1000, function() {
 				    $(this).css({"left":"15%","top":"20%","z-index":"0"});
 				    $(this).attr("src","images/tu"+index+"_right-sheet0.png");
 				  });
@@ -145,11 +145,14 @@ var audioPlayer=new Audio('media/1015.ogg');
   		$("#p2").html(percent_rt);
         if(percent_rt<=0.3){
            $("#img_result").attr("src","images/jieguo1-sheet0.png");	
-        }else if(percent_rt<=0.5){
+        }
+        if(percent_rt<=0.5&&percent_rt>0.3){
            $("#img_result").attr("src","images/jieguo2-sheet0.png");	
-        }else if(percent_rt<=0.8){
+        }
+        if(percent_rt<=0.8&&percent_rt>0.5){
            $("#img_result").attr("src","images/jieguo3-sheet0.png");	
-        }else if(percent_rt<=1){
+        }
+        if(percent_rt<=1&&percent_rt>0.8){
            $("#img_result").attr("src","images/jieguo4-sheet0.png");	
         }
   		
