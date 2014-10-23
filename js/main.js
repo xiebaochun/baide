@@ -135,6 +135,10 @@ var timeCallBack;
   }
   function end(){
   	if(time>=8){
+  		time=0;
+  		count=0;
+  		 index=2;
+         isStart=false;
         clearInterval(timeCallBack);
     	$("#count").hide();
   	  	$("#time").hide();
