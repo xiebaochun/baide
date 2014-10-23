@@ -10,6 +10,7 @@ $(function () {
  	                  "width":"30%",
  	                   "left":"35%",
  	                   "top":"80%"});
+  
 
   $("#start_bt").click(function(){
   	  console.log("start click");
@@ -24,29 +25,38 @@ $(function () {
   	  	$("#img_right_next").attr("src","images/tu2_right-sheet0.png");
 
   	  	$(".game_img").show();
+
+  	  	$(".game_img").swipe({
+		  swipe:function(event, direction, distance, duration, fingerCount) {
+		    console.log("You swiped " + direction );
+		    if(direction=="right"){
+			    	$("#img_left").animate({
+					opacity: 0.5,
+					left: "-=100",
+					top: "+=200"
+					}, 1000, function() {
+					// Animation complete.
+					$(this).css({"left":"10%","top":"10%","z-index":"0"});
+					$("#img_left_next").css("z-index","1");
+		  	  	    $("#img_right_next").css("z-index","1");
+					});
+
+		  	  	  $("#img_right").animate({
+				    opacity: 0.5,
+				    left: "+=100",
+				    top: "+=200"
+				  }, 1000, function() {
+				    $(this).css({"left":"10%","top":"10%","z-index":"0"});
+				  });
+		    }
+		  }
+		});
   	  	$("#img_right").on("swipe",function(){
+      
 
 
 
-
-		  $("#img_left").animate({
-			opacity: 0.5,
-			left: "-=100",
-			top: "+=200"
-			}, 1000, function() {
-			// Animation complete.
-			$(this).css({"left":"10%","top":"10%","z-index":"0"});
-			$("#img_left_next").css("z-index","1");
-  	  	    $("#img_right_next").css("z-index","1");
-			});
-
-  	  	  $("#img_right").animate({
-		    opacity: 0.5,
-		    left: "+=100",
-		    top: "+=200"
-		  }, 1000, function() {
-		    $(this).css({"left":"10%","top":"10%","z-index":"0"});
-		  });
+		  
 
 
 
