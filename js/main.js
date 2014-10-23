@@ -142,7 +142,7 @@ var audioPlayer=new Audio('media/1015.ogg');
   	if(time>=8){
   		$("#p1").html(count);
   		var percent_rt=(parseFloat(count)/10).toFixed(1);
-  		$("#p2").html(percent_rt);
+  		$("#p2").html(percent_rt*10);
         if(percent_rt<=0.3){
            $("#img_result_").attr("src","images/jieguo1-sheet0.png");	
         }
