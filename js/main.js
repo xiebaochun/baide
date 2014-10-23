@@ -17,7 +17,12 @@ var timeCallBack;
  	                   "left":"35%",
  	                   "top":"80%"});
   
-
+  $("#replay_bt").click(function(){
+	    $("#replay_bt").hide();
+  	  	$("#share_bt").hide();
+    	$("#bg").attr("src","images/beijing-sheet0.png");
+        $("#start_bt").show();
+   });
   $("#start_bt").click(function(){
   	  console.log("start click");
   	  $("#bg").attr("src","images/start-sheet0.png");
@@ -34,7 +39,7 @@ var timeCallBack;
 
   	  	$(".game_img").show();
 
-  	  	$("#img_right").swipe({
+  	  	$("#img_left").swipe({
 		  swipe:function(event, direction, distance, duration, fingerCount) {
 		  	if(isSwiping)return;
 		  	isSwiping=true;
@@ -73,7 +78,7 @@ var timeCallBack;
 		  }
 		});
 
-		$("#img_right_next").swipe({
+		$("#img_left_next").swipe({
 		  swipe:function(event, direction, distance, duration, fingerCount) {
 		  	if(isSwiping)return;
 		  	isSwiping=true;
@@ -112,7 +117,11 @@ var timeCallBack;
   	  	
   	  	
   	  },1000);
+
   });
+
+
+
 
   function playGame(){
   	console.log("click");
@@ -123,7 +132,9 @@ var timeCallBack;
     	$("#count").hide();
   	  	$("#time").hide();
   	  	$(".game_img").hide();
-  	  	
+  	  	$("#replay_bt").show();
+  	  	$("#share_bt").show();
+  	  	$("#result_img").show();
     	$("#bg").attr("src","images/beijing3-sheet0.png");
     }
 

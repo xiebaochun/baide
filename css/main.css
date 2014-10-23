@@ -77,3 +77,27 @@ overflow: hidden;
 	
 	top: 0px;
 }
+ #replay_bt{
+ 	display: none;
+   position: absolute;
+   width: 30%;
+   height: 10%;
+   left: 2%;
+   top: 80%;
+ }
+ #share_bt{
+ 	display: none;
+   position: absolute;
+   left: 50%;
+   top: 80%;
+   width: 30%;
+   height: 10%;
+ }
+.result_img{
+	display: none;
+	position: absolute;
+	width: 80%;
+   height: 60%;
+	left: 1%;
+	top: 20%;
+}
