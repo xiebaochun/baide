@@ -11,6 +11,7 @@ var audioPlayer=new Audio('media/1015.ogg');
  $("#bg").attr("src","images/beijing-sheet0.png");
 //$("#bg").attr("src","images/beijing2-sheet0.png");
  $("#bg").css({"height":jQuery(window).height()+"px","width":"100%"});
+ $("#share_img").css({"height":jQuery(window).height()+"px","width":"100%"});
 
  $("#start_bt").attr("src","images/tiaozhan-sheet0.png");
 
@@ -26,6 +27,12 @@ var audioPlayer=new Audio('media/1015.ogg');
     	// $("#bg").attr("src","images/beijing-sheet0.png");
      //    $("#start_bt").show();
      window.location.reload(true); 
+   });
+  $("#share_bt").click(function(){
+	  $("#share_img").show();
+	  setTimeout(function(){
+	  	$("#share_img").hide();
+	  },1000);
    });
   $("#start_bt").click(function(){
   	  console.log("start click");
