@@ -25,7 +25,7 @@ var audioPlayer=new Audio('media/1015.ogg');
   	  // 	$("#img_result").hide();
     	// $("#bg").attr("src","images/beijing-sheet0.png");
      //    $("#start_bt").show();
-     window.location.reload(false); 
+     window.location.reload(true); 
    });
   $("#start_bt").click(function(){
   	  console.log("start click");
