@@ -99,7 +99,7 @@ var audioPlayer=new Audio('media/1015.ogg');
 					
 					left: "-=50%",
 					top: "60%"
-					}, 5000, function() {
+					}, 1000, function() {
 					// Animation complete.
 					$(this).css({"left":"15%","top":"20%","z-index":"0"});
 					$(this).attr("src","images/tu"+index+"_left-sheet0.png");
@@ -115,7 +115,7 @@ var audioPlayer=new Audio('media/1015.ogg');
 				    
 				    left: "+=50%",
 				    top: "60%"
-				  }, 5000, function() {
+				  }, 1000, function() {
 				    $(this).css({"left":"15%","top":"20%","z-index":"0"});
 				    $(this).attr("src","images/tu"+index+"_right-sheet0.png");
 				  });
