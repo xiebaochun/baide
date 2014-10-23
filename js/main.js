@@ -32,21 +32,21 @@ $(function () {
 		    if(direction=="right"){
 			    	$("#img_left").animate({
 					opacity: 0.5,
-					left: "-=100",
-					top: "+=200"
-					}, 1000, function() {
+					left: "-=50%",
+					top: "30%"
+					}, 2000, function() {
 					// Animation complete.
-					$(this).css({"left":"10%","top":"10%","z-index":"0"});
+					$(this).css({"left":"15%","top":"20%","z-index":"0"});
 					$("#img_left_next").css("z-index","1");
 		  	  	    $("#img_right_next").css("z-index","1");
 					});
 
 		  	  	  $("#img_right").animate({
 				    opacity: 0.5,
-				    left: "+=100",
-				    top: "+=200"
-				  }, 1000, function() {
-				    $(this).css({"left":"10%","top":"10%","z-index":"0"});
+				    left: "+=50%",
+				    top: "30%"
+				  }, 2000, function() {
+				    $(this).css({"left":"15%","top":"20%","z-index":"0"});
 				  });
 		    }
 		  }

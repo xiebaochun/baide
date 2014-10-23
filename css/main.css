@@ -25,11 +25,11 @@ overflow: hidden;
 }
 .game_img{
 	display: none;
-	left: 10%;
-	top: 10%;
+	left: 15%;
+	top: 20%;
 	position: absolute;
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 60%;
 	/*background: url(../images/jieguo4-sheet0.png);*/
 }
 .preload{
