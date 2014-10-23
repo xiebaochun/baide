@@ -82,13 +82,13 @@ overflow: hidden;
    position: absolute;
    width: 30%;
    height: 10%;
-   left: 2%;
+   left: 10%;
    top: 80%;
  }
  #share_bt{
  	display: none;
    position: absolute;
-   left: 50%;
+   left: 60%;
    top: 80%;
    width: 30%;
    height: 10%;
@@ -98,6 +98,6 @@ overflow: hidden;
 	position: absolute;
 	width: 80%;
    height: 60%;
-	left: 1%;
-	top: 20%;
+	left: 10%;
+	top: 17%;
 }
