@@ -141,7 +141,18 @@ var audioPlayer=new Audio('media/1015.ogg');
   function end(){
   	if(time>=8){
   		$("#p1").html(count);
-  		$("#p2").html((parseFloat(count)/10).toFixed(1));
+  		var percent_rt=(parseFloat(count)/10).toFixed(1);
+  		$("#p2").html(percent_rt);
+        if(percent_rt<=0.3){
+           $("#img_result").attr("src","images/jieguo1-sheet0.png");	
+        }else if(percent_rt<=0.5){
+           $("#img_result").attr("src","images/jieguo2-sheet0.png");	
+        }else if(percent_rt<=0.8){
+           $("#img_result").attr("src","images/jieguo3-sheet0.png");	
+        }else if(percent_rt<=1){
+           $("#img_result").attr("src","images/jieguo4-sheet0.png");	
+        }
+  		
   		time=0;
   		count=0;
   		 index=2;
