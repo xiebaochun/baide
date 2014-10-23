@@ -31,7 +31,7 @@ $(function () {
 		    console.log("You swiped " + direction );
 		    if(direction=="right"){
 			    	$("#img_left").animate({
-					opacity: 0.5,
+					
 					left: "-=50%",
 					top: "30%"
 					}, 2000, function() {
@@ -42,7 +42,7 @@ $(function () {
 					});
 
 		  	  	  $("#img_right").animate({
-				    opacity: 0.5,
+				    
 				    left: "+=50%",
 				    top: "30%"
 				  }, 2000, function() {
