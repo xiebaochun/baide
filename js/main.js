@@ -6,6 +6,8 @@ var time=0;
 var count=0;
 var isSwiping=false;
 var timeCallBack;
+var audioPlayer=new Audio('media/1015.ogg');
+
  $("#bg").attr("src","images/beijing-sheet0.png");
 //$("#bg").attr("src","images/beijing2-sheet0.png");
  $("#bg").css({"height":jQuery(window).height()+"px","width":"100%"});
@@ -45,6 +47,7 @@ var timeCallBack;
 		  swipe:function(event, direction, distance, duration, fingerCount) {
 		  	if(isSwiping)return;
 		  	isSwiping=true;
+		  	audioPlayer.play();
 		    console.log("You swiped " + direction );
 		    index+=1;
             count++;
@@ -86,7 +89,7 @@ var timeCallBack;
 		  	if(isSwiping)return;
 		  	isSwiping=true;
 		    console.log("You swiped " + direction );
-
+            audioPlayer.play();
 		    index+=1;
 		    count++;
             $("#count_number").html(count);
