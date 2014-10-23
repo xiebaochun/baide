@@ -144,16 +144,16 @@ var audioPlayer=new Audio('media/1015.ogg');
   		var percent_rt=(parseFloat(count)/10).toFixed(1);
   		$("#p2").html(percent_rt);
         if(percent_rt<=0.3){
-           $("#img_result").attr("src","images/jieguo1-sheet0.png");	
+           $("#img_result_").attr("src","images/jieguo1-sheet0.png");	
         }
         if(percent_rt<=0.5&&percent_rt>0.3){
-           $("#img_result").attr("src","images/jieguo2-sheet0.png");	
+           $("#img_result_").attr("src","images/jieguo2-sheet0.png");	
         }
         if(percent_rt<=0.8&&percent_rt>0.5){
-           $("#img_result").attr("src","images/jieguo3-sheet0.png");	
+           $("#img_result_").attr("src","images/jieguo3-sheet0.png");	
         }
         if(percent_rt<=1&&percent_rt>0.8){
-           $("#img_result").attr("src","images/jieguo4-sheet0.png");	
+           $("#img_result_").attr("src","images/jieguo4-sheet0.png");	
         }
   		
   		time=0;
