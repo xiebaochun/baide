@@ -140,6 +140,8 @@ var timeCallBack;
   		 index=2;
          isStart=false;
         clearInterval(timeCallBack);
+        $("#time_number").html(time);
+        $("#count_number").html(count);
     	$("#count").hide();
   	  	$("#time").hide();
   	  	$(".game_img").hide();
