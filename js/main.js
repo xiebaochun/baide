@@ -20,6 +20,7 @@ var timeCallBack;
   $("#replay_bt").click(function(){
 	    $("#replay_bt").hide();
   	  	$("#share_bt").hide();
+  	  	$("#img_result").hide();
     	$("#bg").attr("src","images/beijing-sheet0.png");
         $("#start_bt").show();
    });
@@ -147,7 +148,7 @@ var timeCallBack;
   	  	$(".game_img").hide();
   	  	$("#replay_bt").show();
   	  	$("#share_bt").show();
-  	  	$("#result_img").show();
+  	  	$("#img_result").show();
     	$("#bg").attr("src","images/beijing3-sheet0.png");
     }
   }
