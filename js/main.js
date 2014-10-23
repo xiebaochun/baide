@@ -54,7 +54,7 @@ $(function () {
 
 
 		});
-  	  	setInterval(playGame,1000/60);
+  	  	// setInterval(playGame,1000/60);
   	  },1000);
   });
 
