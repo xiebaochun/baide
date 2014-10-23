@@ -1,4 +1,46 @@
 $(function () {
+	var images=[];
+preload(
+"images/beijing-sheet0.png",
+"images/tiaozhan-sheet0.png",
+"images/beijing2-sheet0.png",
+"images/kong-sheet0.png",
+"images/shijian-sheet0.png",
+"images/defen-sheet0.png",
+"images/beijing3-sheet0.png",
+"images/jieguo1-sheet0.png",
+"images/tiaozhan2-sheet0.png",
+"images/fenxiang-sheet0.png",
+"images/tanchu-sheet0.png",
+"images/tu1_right-sheet0.png",
+"images/tu1_left-sheet0.png",
+"images/tu2_right-sheet0.png",
+"images/tu2_left-sheet0.png",
+"images/tu3_right-sheet0.png",
+"images/tu3_left-sheet0.png",
+"images/tu4_right-sheet0.png",
+"images/tu4_left-sheet0.png",
+"images/tu5_right-sheet0.png",
+"images/tu5_left-sheet0.png",
+"images/tu6_right-sheet0.png",
+"images/tu6_left-sheet0.png",
+"images/tu7_right-sheet0.png",
+"images/tu7_left-sheet0.png",
+"images/tu8_right-sheet0.png",
+"images/tu8_left-sheet0.png",
+"images/tu9_right-sheet0.png",
+"images/tu9_left-sheet0.png",
+"images/tu10_right-sheet0.png",
+"images/tu10_left-sheet0.png",
+"images/jieguo2-sheet0.png",
+"images/jieguo3-sheet0.png",
+"images/jieguo4-sheet0.png",
+"images/start-sheet0.png",
+"images/jiazaibeijing-sheet0.png",
+"images/jiazailogo-sheet0.png",
+"images/jindubeijing-sheet0.png",
+"images/redjindu-sheet0.png"
+);
    // alert(jQuery(window).height());
    var index=2;
 isStart=false;
@@ -185,5 +227,11 @@ var audioPlayer=new Audio('media/1015.ogg');
     	$("#bg").attr("src","images/beijing3-sheet0.png");
     }
   }
+  			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
 
 });
