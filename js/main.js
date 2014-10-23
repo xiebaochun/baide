@@ -64,6 +64,7 @@ var timeCallBack;
 		  	  	    $("#img_right_next").css("z-index","1");
 		  	
                      isSwiping=false;
+                     end();
 					});
 
 		  	  	  $("#img_right").animate({
@@ -99,8 +100,10 @@ var timeCallBack;
 					$(this).attr("src","images/tu"+index+"_left-sheet0.png");
 					$("#img_left").css("z-index","1");
 		  	  	    $("#img_right").css("z-index","1");
+
 		  	
                     isSwiping=false;
+                    end();
 					});
 
 		  	  	  $("#img_right_next").animate({
@@ -127,7 +130,11 @@ var timeCallBack;
   	console.log("click");
   	time++;
   	$("#time_number").html(time);
-    if(time>=8){
+     end();
+  
+  }
+  function end(){
+  	if(time>=8){
         clearInterval(timeCallBack);
     	$("#count").hide();
   	  	$("#time").hide();
@@ -137,7 +144,6 @@ var timeCallBack;
   	  	$("#result_img").show();
     	$("#bg").attr("src","images/beijing3-sheet0.png");
     }
-
   }
 
 });
