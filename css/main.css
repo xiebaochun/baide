@@ -122,6 +122,9 @@ overflow: hidden;
 	top: 65%;
 }
 #share_img{
+	position: absolute;
+	left: 0;
+	top: 0;
 	display: none;
-	
+
 }
